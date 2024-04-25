@@ -8,11 +8,11 @@ def nothing(x):
 cv2.namedWindow('picker')
 
 # Create trackbars for color range
-cv2.createTrackbar('H1','picker',0,179,nothing)
-cv2.createTrackbar('S1','picker',0,255,nothing)
+cv2.createTrackbar('H1','picker',7,179,nothing)
+cv2.createTrackbar('S1','picker',102,255,nothing)
 
-cv2.createTrackbar('H2','picker',0,179,nothing)
-cv2.createTrackbar('S2','picker',0,255,nothing)
+cv2.createTrackbar('H2','picker',176,179,nothing)
+cv2.createTrackbar('S2','picker',255,255,nothing)
 
 # Create picker image in HSV color space
 picker_image = np.zeros((256, 180, 3), dtype=np.uint8)
